@@ -1,4 +1,4 @@
-import ALProxy 
+from naoqi import ALProxy 
 import pyttsx3 #Optional
 
 def sayAndSend(myVal):
