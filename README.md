@@ -16,12 +16,14 @@ Research in simulating robots in virtual environments
 ## Connecting the virtual robot with the sdk
 
 Code is available in NaoChat.py in the Getting Started folder.
-1. Test that the sdk can talk to the virtual robot by running the following code and looking at the:
+1. Test that the sdk can talk to the virtual robot by running the following code:
+
 ``
 from naoqi import ALProxy
 tts = ALProxy("ALTextToSpeech", "<IP of your robot>", <Port of your robot (integer)>)
 tts.say("Hello, world!")
 ``
+
 2. See above (step 4) for checking the port and IP. 
 3. The virtual robot speech should appear as a bubble in the robot view (the virtual robot can't produce sound or show LED lights, it also has maximal stiffness).
 
