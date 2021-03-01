@@ -9,7 +9,7 @@ Research in simulating robots in virtual environments
 4. Select the virtual NAO robot: 
   -in the Connection to panel:
   -if the simulated robot appears in the list, double click it,
-  -if not, set the IP address to 127.0.0.1 and for the port, search for it in preferences (it should appear under the virtual robot sub menu down the bottom) and click    the Select button.
+  -if not, set the IP address to 127.0.0.1 and for the port, search for it in Edit/Preferences/Virtual Robot (it should appear under the virtual robot sub menu down the bottom) and click    the Select button.
 5. Once you have selected the NAO virtual robot, click connect.
 
 
@@ -33,4 +33,4 @@ tts.say("Hello, world!")
 Code is available in NaoWebcam.py in the Getting Started folder.
 1. Install open-cv (because the sdk is for python 2.7 32-bit, I used ``pip2 install opencv-python==4.2.0.32``).
 2. This should install numpy, if not, install as well.
-3. Run the python file and verify that the data is being seen in the webcam view in Choregraphe.
+3. Run the python file and verify that the data is being seen in the video monitor view in Choregraphe.
