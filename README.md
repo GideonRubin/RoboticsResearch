@@ -1,4 +1,4 @@
-# RoboticsResearch
+# Robotics Research
 Research in simulating robots in virtual environments
 
 ## Getting started with a simulated Nao in Choregraphe
