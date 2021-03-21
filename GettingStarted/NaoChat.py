@@ -1,4 +1,4 @@
-from naoqi import ALProxy 
+# from naoqi import ALProxy
 import pyttsx3 #Optional
 
 def sayAndSend(myVal):
@@ -11,7 +11,13 @@ def sayAndSend(myVal):
     tts.say(myVal)
     engine.stop()
 
-port = int(input("Enter your port here: "))
-sayAndSend("Hello World!")
+def say(myVal):
+    # Uses native text to speech to simulate for virtual NAO
+    engine = pyttsx3.init()
+    engine.say(myVal)
+    engine.runAndWait()
 
-
+# port = int(input("Enter your port here: "))
+# sayAndSend("Hello World!")
+#
+#
