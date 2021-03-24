@@ -34,7 +34,7 @@ This runs in Python 2.7 (due to the Nao python API.)
 
 ## To do:
 * Convert to a flask application with big 5 personality test such as https://fetzer.org/sites/default/files/images/stories/pdf/selfmeasures/Personality-BigFiveInventory.pdf
-* Incorporate a hybrid approach to empathy based on two different models suggested by Hoffman (2001).  
+* Incorporate a hybrid approach to empathy based on two different models suggested by Paiva, Ana & Leite (et al.).  
 * Create a memory over time for multiple and more informed interactions.
 * Test conversational / static interaction with a robot
 
