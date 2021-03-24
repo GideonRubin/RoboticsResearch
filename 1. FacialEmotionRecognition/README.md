@@ -1,4 +1,4 @@
-# Client Server face detect game
+# Client Server face detection game
 
 Gideon Rubin - 24/03/2021
 <br/>
@@ -19,18 +19,18 @@ Based on the concept of empathetic mimicry explored by Hoffman. This uses a 'mas
 
 Run `` pip install -r dependancies.txt`` to access required libraries.
 
-###Client (game and face detection)
+### Client (game and face detection)
 This runs in python 3+
 1. cd into 1. FacialEmotionRecogntion/RobotClient directory.
 2. run ``python connectFourWithAi.py``
 
-###Server
+### Server
 This runs in Python 2.7 (due to the Nao python API.)
 1. cd into 1. FacialEmotionRecogntion/RobotServer directory.
 2. run ``python server.py``
 
 
-## Todo:
+## To do:
 * Convert to a flask application with big 5 personality test such as https://fetzer.org/sites/default/files/images/stories/pdf/selfmeasures/Personality-BigFiveInventory.pdf
 * Incorporate a hybrid approach to empathy based on two different models suggested by Hoffman (2001).  
 * Create a memory over time for multiple and more informed interactions.
@@ -44,7 +44,7 @@ This runs in Python 2.7 (due to the Nao python API.)
 </details>
 
 
-##References
+## References
 * Martin L. Hoffman. 2001. Empathy and Moral Development: Implications for Caring and Justice. Cambridge University Press.
 * Paiva, Ana & Leite, Iolanda & Boukricha, Hana & Wachsmuth, Ipke. (2017). Empathy in Virtual Agents and Robots: A Survey. ACM Transactions on Interactive Intelligent Systems. 7. 1-40. 10.1145/2912150.
 * S. I. Serengil and A. Ozpinar, "LightFace: A Hybrid Deep Face Recognition Framework," 2020 Innovations in Intelligent Systems and Applications Conference (ASYU), Istanbul, Turkey, 2020, pp. 1-5, doi: 10.1109/ASYU50717.2020.9259802.
