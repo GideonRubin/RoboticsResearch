@@ -1,9 +1,12 @@
+# from https://github.com/KeithGalli/Connect4-Python
+
 import numpy as np
 import random
 import pygame
 import sys
 import math
 import captureEmotion
+import client
 
 
 
@@ -224,7 +227,8 @@ def draw_board(board):
                 int(c * SQUARESIZE + SQUARESIZE / 2), height - int(r * SQUARESIZE + SQUARESIZE / 2)), RADIUS)
     pygame.display.update()
 
-
+# Optional:
+captureEmotion.buildModel()
 board = create_board()
 print_board(board)
 game_over = False
@@ -245,7 +249,7 @@ draw_board(board)
 pygame.display.update()
 
 myfont = pygame.font.SysFont("monospace", 75)
-captureEmotion.buildModel()
+
 turn = random.randint(PLAYER, AI)
 
 while not game_over:
@@ -267,7 +271,8 @@ while not game_over:
             # print(event.pos)
             # Ask for Player 1 Input
 
-            print(captureEmotion.captureEmotion())
+            robotMessage = captureEmotion.captureEmotion()
+            client.sendMessage(robotMessage)
             if turn == PLAYER:
                 posx = event.pos[0]
                 col = int(math.floor(posx / SQUARESIZE))
@@ -275,6 +280,7 @@ while not game_over:
                 if is_valid_location(board, col):
                     row = get_next_open_row(board, col)
                     drop_piece(board, row, col, PLAYER_PIECE)
+
 
                     if winning_move(board, PLAYER_PIECE):
                         label = myfont.render("Player 1 wins!!", 1, RED)
@@ -311,4 +317,7 @@ while not game_over:
             turn = turn % 2
 
     if game_over:
+        captureEmotion.done=True
+        captureEmotion.captureEmotion()
+        # captureEmotion.generateReport() Uncomment after testing.
         pygame.time.wait(3000)

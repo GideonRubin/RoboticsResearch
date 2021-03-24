@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+tensorflow
+keras
+deepface
+python-opencv
+pygame
+pyttsx3
