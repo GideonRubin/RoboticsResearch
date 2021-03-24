@@ -15,6 +15,8 @@ Based on the concept of empathetic mimicry explored by Hoffman. This uses a 'mas
 4. As part of the main application, a client instance is created and sends the most pronounced facial expression to the server over UDP.
 5. The server receives the most significant emotion and sends a relevant response through the robot interface (in this case the NAO API).
 
+![Alt text](overview.png?raw=true "Title")
+
 ## Running the application
 
 Run `` pip install -r dependancies.txt`` to access required libraries.
